@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3" >
+	<test name="Test1">
+		<parameter name="deviceName_" value="Nexus 5X API 27"/>
+		<parameter name="UDID_" value="emulator-5554"/>
+		<parameter name="URL_" value="0.0.0.0:4727/wd/hub"/>
+		<parameter name="WDALOCALPORT_" value="8103"/>
+		<parameter name="deviceType_" value="mobile"/>
+		<parameter name="platformName_" value="android"/>
+		<parameter name="platformVersion_" value="8.1"/>
+		<classes>
+			<class name="equinox.furthermoreMob.MobTest"/>
+		</classes>
+	</test> 
+	<!-- <test name="Test2">
+		<parameter name="deviceName_" value="Nexus 9 API 26"/>
+		<parameter name="UDID_" value="emulator-5556"/>
+		<parameter name="URL_" value="127.0.0.2:4723/wd/hub"/>
+		<parameter name="deviceType_" value="tablet"/>
+		<classes>
+			<class name="equinox.furthermoreMob.MobTest"/>
+		</classes>
+	</test> -->
+	<!-- <test name="Test3">
+		<parameter name="deviceName_" value="iPhone X"/>
+		<parameter name="UDID_" value="C84396EE-1A2F-4C6B-B4F4-D865FDC63598"/>
+		<parameter name="URL_" value="127.0.0.1:4726/wd/hub"/>
+		<parameter name="WDALOCALPORT_" value="8101"/>
+		<parameter name="deviceType_" value="mobile"/>
+		<parameter name="platformName_" value="iOS"/>
+		<parameter name="platformVersion_" value="11.4"/>
+		<parameter name="browserName_" value="Safari"/>
+		<classes>
+			<class name="equinox.furthermoreMob.MobTest"/>
+		</classes>
+	</test>
+	<test name="Test4">
+		<parameter name="deviceName_" value="iPad Air"/>
+		<parameter name="UDID_" value="A1DD5107-92C6-4C59-810D-83B4C4C40EAB"/>
+		<parameter name="URL_" value="127.0.0.1:4725/wd/hub"/>
+		<parameter name="WDALOCALPORT_" value="8100"/>
+		<parameter name="deviceType_" value="tablet"/>
+		<parameter name="platformName_" value="iOS"/>
+		<parameter name="platformVersion_" value="11.4"/>
+		<parameter name="browserName_" value="Safari"/>
+		<classes>
+			<class name="equinox.furthermoreMob.MobTest"/>
+		</classes>
+	</test> -->
+</suite>
